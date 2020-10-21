@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedbackform"
+    android:background="@color/colorAccent"
+    android:scrollbarSize="10dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:shadowColor="@color/colorAccent"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textSize="40dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+        android:hint="Feedback"
+        android:maxLines="6"
+        android:layout_below="@+id/Name"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/Feedback"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Feedback"
+        android:layout_margin="20dp"
+        android:layout_marginTop="598dp"
+        android:layout_marginBottom="2dp"
+        android:text="Send Feedback"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>
